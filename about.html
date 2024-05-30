@@ -104,32 +104,60 @@
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-lg-12 text-center">
-          <h2 class="section-title">Work Process</h2>
+          <h2 class="section-title">Methodology</h2>
         </div>
         <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-          <div class="">
+          
             <img src="images/icons/plan.png" class="mb-4" alt="icon">
-            <h4 class="mb-4">Research and Plan</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.</p>
-          </div>
+            <h4 class="mb-4 ">Data Handling and Storage </h4>
+            <p style="text-align: justify;">Our system initiates with the user uploading a dataset, which is securely
+              stored on our server and sent
+              to a database for future use. Upon receiving questions related to the dataset, they are forwarded to our
+              advanced Language Learning Model (LLM) for classification. The LLM determines whether the query pertains
+              to predictions or summaries, facilitating appropriate downstream processes. This ensures efficient data
+              management and question handling right from the onset.</p>
+     
         </div>
         <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
           <img src="images/icons/design.png" class="mb-4" alt="icon">
-          <h4 class="mb-4">Design and Develop</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+          <h4 class="mb-4">Prediction Model Workflow</h4>
+          <p style="text-align: justify;">
+            For prediction-related queries, the dataset is preprocessed on the server for optimal quality. The data is
+            then converted into a 2D array data frame and sent to our real-time prediction model, which generates
+            forecasts dynamically. Forecast accuracy is assessed using an error score or R² value. A score above 1
+            signifies high prediction accuracy, allowing the forecast to be displayed. If the score is below 0, a
+            message indicates insufficient data for prediction, ensuring clear and reliable forecasting.</p>
         </div>
         <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
           <img src="images/icons/print.png" class="mb-4" alt="icon">
-          <h4 class="mb-4">Deliver</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.</p>
+          <h4 class="mb-4">Graph Generation and Summarization
+          </h4>
+          <p style="text-align: justify;">For graph-related queries, the LLM generates code based on user-defined
+            variables. This code is processed by a graph generation function to create real-time visualizations, which
+            are then sent to the server for frontend display. For summary-related questions, the LLM provides answers
+            directly from the dataset, utilizing its advanced analytical capabilities to deliver concise and accurate
+            summaries. This approach ensures comprehensive data analysis and visualization, effectively catering to
+            diverse user needs.</p>
         </div>
+
       </div>
+      <!-- <img src="images/methodology.jpeg" class="mb-4" alt="icon"> -->
     </div>
   </section>
   <!-- ./Work Process -->
+  <section class="section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Methodology Diagram</h2>
+        </div>
+      <img src="images/methodology.jpeg" style="width: auto; height: 600px;" alt="icon">
+ 
+       
+      </div>
+     
+    </div>
+  </section>
 
   <!-- team -->
   <section class="section bg-cover" data-background="images/backgrounds/team-bg.png">
@@ -167,10 +195,10 @@
           <div class="card text-center">
             <img src="images/assets//image/vithushan.jpeg" class="card-img-top">
             <div class="card-body">
-              <h4 class="card-title">  S. VITHUSHAN</h4>
-              <p class="text-light font-secondary">ICT/19/868<br/>
-                ict19868@gmail.com<br/>
-                0772644218<br/>
+              <h4 class="card-title"> S. VITHUSHAN</h4>
+              <p class="text-light font-secondary">ICT/19/868<br />
+                ict19868@gmail.com<br />
+                0772644218<br />
                 Software Techologyr</p>
             </div>
           </div>
@@ -179,7 +207,37 @@
     </div>
   </section>
   <!-- /team -->
+  <!-- Research Supervisor -->
+  <section class="section bg-primary position-relative testimonial-bg-shapes">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <h2 class="section-title text-white mb-5">Research Supervisor</h2>
+        </div>
 
+        <div class="col-md-4 col-sm-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
+          <div class="card text-center">
+            <img src="images/assets/image/WhatsApp Image 2024-05-30 at 22.32.18.jpeg" style="height: 350px;" class="card-img-top">
+            <div class="card-body">
+              <h4 class="card-title">Mr. Chamila Karunatilake</h4>
+              <h5 class="text-light font-secondary" style="line-height: 30px;">Lecturer, Faculty of Technology,<br>
+                University of Sri Jayewardenepura,<br>
+                chamilakarunatilake@sjp.ac.lk,<br>
+                0764608026</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bg shapes -->
+    <img src="images/backgrounds/map.png" alt="map" class="img-fluid bg-map">
+    <img src="images/illustrations/dots-group-v.png" alt="bg-shape" class="img-fluid bg-shape-1">
+    <img src="images/illustrations/leaf-orange.png" alt="bg-shape" class="img-fluid bg-shape-2">
+    <img src="images/illustrations/dots-group-sm.png" alt="bg-shape" class="img-fluid bg-shape-3">
+    <img src="images/illustrations/leaf-pink-round.png" alt="bg-shape" class="img-fluid bg-shape-4">
+    <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
+  </section>
+  <!-- /Research Supervisor -->
 
 
   <!-- contact -->
@@ -215,33 +273,35 @@
   <!-- /contact -->
 
   <!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">SivaranjanVithushan@email.com</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">+94772644218</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Mallakam,East,Mallakam,Jaffna.</p>
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">SivaranjanVithushan@email.com</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Phone</h5>
+            <p class="text-white paragraph-lg font-secondary">+94772644218</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Address</h5>
+            <p class="text-white paragraph-lg font-secondary">Mallakam,East,Mallakam,Jaffna.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> Develop by FOT/ICT/2018B4-08</p>
-  </div>
-</footer>
-<!-- /footer -->
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright ©
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Develop by FOT/ICT/2018B4-08
+      </p>
+    </div>
+  </footer>
+  <!-- /footer -->
   <!-- jQuery -->
   <script src="plugins/jQuery/jquery.min.js"></script>
   <!-- Bootstrap JS -->
