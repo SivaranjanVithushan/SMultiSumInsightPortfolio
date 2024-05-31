@@ -3,35 +3,30 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio Template</title>
+  <title>MultiSumInsight Portfolio</title>
 
   <!-- mobile responsive meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- ** Plugins Needed for the Project ** -->
-  <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <!-- slick slider -->
   <link rel="stylesheet" href="plugins/slick/slick.css">
-  <!-- themefy-icon -->
   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
 
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
 
-  <!--Favicon-->
+  <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
-
   <header class="navigation fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand font-tertiary h3" href="index.html"><img src="images/assets/logo.png"
-          style="width: 150px; height: auto;" alt="Myself"></a>
+      <a class="navbar-brand font-tertiary h3" href="index.html">
+        <img src="images/assets/logo.png" style="width: 170px; height: auto;" alt="MultiSumInsight Logo">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
         aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,7 +38,7 @@
             <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
@@ -77,19 +72,20 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <p style="text-align: justify;">In the grocery and retail industry, existing systems for dataset management often come with significant
+          <p style="text-align: justify;">
+            In the grocery and retail industry, existing systems for dataset management often come with significant
             limitations. Users are typically restricted to uploading only PDF datasets, lack the capability for
             real-time graph generation based on user-defined variables, and do not offer predictive analytics. To
             address these gaps, we developed an innovative system that overcomes these constraints. Our platform
             supports various data formats, provides dynamic real-time visualizations, and delivers accurate predictions,
             enhancing decision-making processes. This comprehensive solution ensures that users can fully leverage their
-            data for improved operational efficiency and strategic planning.</p>
+            data for improved operational efficiency and strategic planning.
+          </p>
         </div>
         <div class="col-md-4 text-center drag-lg-top">
           <div class="shadow-down mb-4">
-            <img src="images/assets/imgd.png" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
+            <img src="images/assets/imgd.png" alt="System illustration" class="img-fluid w-100 rounded-lg border-thick border-white">
           </div>
-
         </div>
       </div>
     </div>
@@ -104,53 +100,47 @@
           <h2 class="section-title">Methodology</h2>
         </div>
         <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-
-          <img src="images/icons/plan.png" class="mb-4" alt="icon">
-          <h4 class="mb-4 ">Data Handling and Storage </h4>
-          <p style="text-align: justify;">Our system initiates with the user uploading a dataset, which is securely
-            stored on our server and sent
+          <img src="images/icons/plan.png" class="mb-4" alt="Data Handling and Storage">
+          <h4 class="mb-4">Data Handling and Storage</h4>
+          <p style="text-align: justify;">
+            Our system initiates with the user uploading a dataset, which is securely stored on our server and sent
             to a database for future use. Upon receiving questions related to the dataset, they are forwarded to our
             advanced Language Learning Model (LLM) for classification. The LLM determines whether the query pertains
             to predictions or summaries, facilitating appropriate downstream processes. This ensures efficient data
-            management and question handling right from the onset.</p>
-
+            management and question handling right from the onset.
+          </p>
         </div>
         <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-          <img src="images/icons/design.png" class="mb-4" alt="icon">
+          <img src="images/icons/design.png" class="mb-4" alt="Prediction Model Workflow">
           <h4 class="mb-4">Prediction Model Workflow</h4>
           <p style="text-align: justify;">
             For prediction-related queries, the dataset is preprocessed on the server for optimal quality. The data is
             then converted into a 2D array data frame and sent to our real-time prediction model, which generates
             forecasts dynamically. Forecast accuracy is assessed using an error score or R² value. A score above 1
             signifies high prediction accuracy, allowing the forecast to be displayed. If the score is below 0, a
-            message indicates insufficient data for prediction, ensuring clear and reliable forecasting.</p>
+            message indicates insufficient data for prediction, ensuring clear and reliable forecasting.
+          </p>
         </div>
         <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
-          <img src="images/icons/print.png" class="mb-4" alt="icon">
-          <h4 class="mb-4">Graph Generation and Summarization
-          </h4>
-          <p style="text-align: justify;">For graph-related queries, the LLM generates code based on user-defined
-            variables. This code is processed by a graph generation function to create real-time visualizations, which
-            are then sent to the server for frontend display. For summary-related questions, the LLM provides answers
-            directly from the dataset, utilizing its advanced analytical capabilities to deliver concise and accurate
-            summaries. This approach ensures comprehensive data analysis and visualization, effectively catering to
-            diverse user needs.</p>
+          <img src="images/icons/print.png" class="mb-4" alt="Graph Generation and Summarization">
+          <h4 class="mb-4">Graph Generation and Summarization</h4>
+          <p style="text-align: justify;">
+            For graph-related queries, the LLM generates code based on user-defined variables. This code is processed by a graph generation function to create real-time visualizations, which are then sent to the server for frontend display. For summary-related questions, the LLM provides answers directly from the dataset, utilizing its advanced analytical capabilities to deliver concise and accurate summaries. This approach ensures comprehensive data analysis and visualization, effectively catering to diverse user needs.
+          </p>
         </div>
       </div>
     </div>
   </section>
   <!-- ./Work Process -->
+
   <section class="section">
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-lg-12 text-center">
           <h2 class="section-title">Methodology Diagram</h2>
         </div>
-        <img src="images/methodology.jpeg" style="width: auto; height: 600px;" alt="icon">
-
-
+        <img src="images/methodology.jpeg" style="width: auto; height: 600px;" alt="Methodology Diagram">
       </div>
-
     </div>
   </section>
 
@@ -163,38 +153,30 @@
         </div>
         <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
           <div class="card text-center">
-            <img src="images/assets/image/arafath.jpeg" class="card-img-top" alt="mebmer profile">
+            <img src="images/assets/image/arafath.jpeg" class="card-img-top" alt="H.M.M. Arafath">
             <div class="card-body">
-              <h4 class="card-title"> H.M.M. Arafath</h4>
-              <p class="text-light ">ICT/19/805 <br /> ict19805@gmail.com<br />0754123799<br />Software
-                Techology<br /></p>
+              <h4 class="card-title">H.M.M. Arafath</h4>
+              <p class="text-light">ICT/19/805 <br /> ict19805@gmail.com<br />0754123799<br />Software Technology<br /></p>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
           <div class="card text-center">
-            <img src="images/assets/image/Fareeha.jpeg" style="height: 350px;" class="card-img-top" alt="mebmer profile">
+            <img src="images/assets/image/Fareeha.jpeg" style="height: 350px;" class="card-img-top" alt="A.L.F.Fareeha">
             <div class="card-body">
-              <h4 class="card-title"> A.L.F.Fareeha</h4>
-              <p class="text-light ">ICT/19/823<br />
-                ict19823@gmail.com<br />
-                0766951999<br />
-                Software Techology</p>
+              <h4 class="card-title">A.L.F.Fareeha</h4>
+              <p class="text-light">ICT/19/823<br /> ict19823@gmail.com<br />0766951999<br />Software Technology</p>
             </div>
           </div>
         </div>
 
-
         <div class="col-md-4 col-sm-6 mb-4 mb-md-0">
           <div class="card text-center">
-            <img src="images/assets//image/vithushan.jpeg" class="card-img-top" alt="mebmer profile">
+            <img src="images/assets/image/vithushan.jpeg" class="card-img-top" alt="S. Vithushan">
             <div class="card-body">
-              <h4 class="card-title"> S. VITHUSHAN</h4>
-              <p class="text-light ">ICT/19/868<br />
-                ict19868@gmail.com<br />
-                0772644218<br />
-                Software Techologyr</p>
+              <h4 class="card-title">S. Vithushan</h4>
+              <p class="text-light">ICT/19/868<br /> ict19868@gmail.com<br />0772644218<br />Software Technology</p>
             </div>
           </div>
         </div>
@@ -202,6 +184,7 @@
     </div>
   </section>
   <!-- /team -->
+
   <!-- Research Supervisor -->
   <section class="section bg-primary position-relative testimonial-bg-shapes">
     <div class="container">
@@ -209,17 +192,16 @@
         <div class="col-12 text-center">
           <h2 class="section-title text-white mb-5">Research Supervisor</h2>
         </div>
-
         <div class="col-md-4 col-sm-6 mb-4 mb-md-0 d-flex justify-content-center align-items-center">
           <div class="card text-center">
-            <img src="images/assets/image/WhatsApp Image 2024-05-30 at 22.32.18.jpeg" style="height: 350px;"
-              class="card-img-top" alt="Supervisor profile">
+            <img src="images/assets/image/WhatsApp Image 2024-05-30 at 22.32.18.jpeg" style="height: 350px;" class="card-img-top" alt="Mr. Chamila Karunatilake">
             <div class="card-body">
               <h4 class="card-title">Mr. Chamila Karunatilake</h4>
               <h5 class="text-light font-secondary" style="line-height: 30px;">Lecturer, Faculty of Technology,<br>
                 University of Sri Jayewardenepura,<br>
                 chamilakarunatilake@sjp.ac.lk,<br>
-                0764608026</h5>
+                0764608026
+              </h5>
             </div>
           </div>
         </div>
@@ -234,7 +216,6 @@
     <img src="images/illustrations/leaf-cyan.png" alt="bg-shape" class="img-fluid bg-shape-5">
   </section>
   <!-- /Research Supervisor -->
-
 
   <!-- contact -->
   <section class="section section-on-footer" data-background="images/backgrounds/bg-dots.png">
@@ -254,11 +235,10 @@
                 <input type="email" id="email" name="email" placeholder="Email Address" class="form-control px-0 mb-4">
               </div>
               <div class="col-12">
-                <textarea name="message" id="message" class="form-control px-0 mb-4"
-                  placeholder="Type Message Here"></textarea>
+                <textarea name="message" id="message" class="form-control px-0 mb-4" placeholder="Type Message Here"></textarea>
               </div>
               <div class="col-lg-6 col-10 mx-auto">
-                <button class="btn btn-primary w-100">send</button>
+                <button class="btn btn-primary w-100">Send</button>
               </div>
             </form>
           </div>
@@ -283,7 +263,7 @@
           </div>
           <div class="col-md-4">
             <h5 class="text-light">Address</h5>
-            <p class="text-white paragraph-lg font-secondary">Mallakam,East,Mallakam,Jaffna.</p>
+            <p class="text-white paragraph-lg font-secondary">Mallakam, East, Mallakam, Jaffna.</p>
           </div>
         </div>
       </div>
@@ -291,13 +271,14 @@
     <div class="border-top text-center border-dark py-5">
       <p class="mb-0 text-light">Copyright ©
         <script>
-          var CurrentYear = new Date().getFullYear()
-          document.write(CurrentYear)
-        </script> Develop by FOT/ICT/2018B4-08
+          var CurrentYear = new Date().getFullYear();
+          document.write(CurrentYear);
+        </script> Developed by FOT/ICT/2018B4-08
       </p>
     </div>
   </footer>
   <!-- /footer -->
+
   <!-- jQuery -->
   <script src="plugins/jQuery/jquery.min.js"></script>
   <!-- Bootstrap JS -->
@@ -309,7 +290,6 @@
 
   <!-- Main Script -->
   <script src="js/script.js"></script>
-
 </body>
 
 </html>
